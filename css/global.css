@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Fira Sans', Arial, sans-serif; /*A Fira Sans está entre aspas pq tem duas palavras sem hífen*/
+  color: #141414;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch; /*como se fosse quatro Zeros. Mas nem sempre vão ser 4 letras. Tipo letra M que é grande, ela não seria quatro*/
+}
+@media(max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize; /*só vai deixar em maiúsculo a primeira letra*/
+    max-width: initial; /*deixar o valor inicial, sem aquele 4ch*/
+  }
+}
